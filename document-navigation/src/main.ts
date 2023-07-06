@@ -1,0 +1,12 @@
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
+import Antd from "ant-design-vue";
+import App from "./App.vue";
+import "ant-design-vue/dist/antd.css";
+import router from "./router";
+import "@/assets/default.less";
+import "@/assets/font.less";
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
+createApp(App).use(router).use(Antd).use(pinia).mount("#app");
