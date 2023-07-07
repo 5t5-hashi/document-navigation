@@ -1,2 +1,2 @@
 # document-navigation
-自己创作的一个导航网站
+导航网站的打包界面，用来挂到github pages上的
